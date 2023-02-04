@@ -1,0 +1,115 @@
+header{text-align: center;
+        padding: 20px;
+        
+        color: darkgreen;background-color: #B5F1CC;
+}
+
+*{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body{
+    background-color:#FCC2FC;
+}
+#logo1{ width:150px; height:225px}
+.row p{font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 500%;}
+section,footer{
+    background-color:#B5F1CC;
+}
+.menu{
+    display:flex;
+    flex-direction: row;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    background-color:#E5FDD1;
+    border-top: 3px solid #FCC2FC;
+    border-bottom: 3px solid #FCC2FC;
+}
+
+.menu ul li {
+    display: inline-block;
+    padding:20px;
+    font-weight:lighter;
+    font-size: large;
+}
+
+.carousel{
+    border-bottom: 3px solid #FCC2FC;}
+.carousel-item > img {
+    width:640px;
+    height:360px;
+  }
+
+  .menu  a{
+    text-decoration:none;
+    color: green;
+
+}
+.menu a:hover{
+    text-decoration: none;
+    color: green;
+}
+
+.Main{
+    display: grid;
+            max-width: 100%;
+            min-height: 2px;
+            grid-template-columns: 100%;
+            grid-template-areas: "Left" "Center" "Right";
+            grid-template-rows : auto 
+
+}
+@media (min-width: 440px) {
+    .Main { 
+        grid-template-columns:33%;
+        grid-template-rows:auto ;
+        grid-template-areas: "Left Center Right";
+        align-items: center;
+    
+    }
+}
+.Left { grid-area: Left;
+    background-color:#C9F4AA;
+    border-radius: 20px;
+    margin: 20px;padding: 25px;
+text-align: center;
+}
+.Center {grid-area: Center;
+    padding: 25px;
+    background-color:#C9F4AA;
+    border-radius: 20px;margin: 20px;text-align: center;
+}
+.Right { grid-area:Right ;
+    background-color:#C9F4AA;
+    border-radius: 20px;margin: 20px;padding: 25px;text-align: center;
+}
+
+.carousel-caption h5, .carousel-caption p{ 
+    font-weight: bold;color: black;
+}
+.container img{ width:50px; height:100px}
+.container div{
+    text-align: center;
+    align-items: center;
+}
+/*
+.footz{
+    display: flex;
+    
+}
+.footz .copy{
+    align-content: center; 
+    align-items:flex-start;
+    flex-wrap: wrap;
+}
+
+
+
+.footz .copy{
+    align-content: center;
+    align-items:flex-end;
+    flex-wrap: wrap;
+}
+
+*/
